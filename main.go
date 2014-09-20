@@ -10,6 +10,6 @@ func main() {
 
 	json := github.GetRepos()
 	fmt.Println(json)
-	utils.WriteString("./data.json", json)
+	utils.WriteFile(utils.GetConfig("save_path").(string), json)
 
 }

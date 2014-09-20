@@ -2,7 +2,6 @@ package utils
 
 import (
 	"encoding/json"
-	// "fmt"
 )
 
 func JsonDecode(data string) interface{} {
